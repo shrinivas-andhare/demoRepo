@@ -1,0 +1,67 @@
+- Exception is an event that occurs during the execution due to wrong  :i
+   input and it leads to abnormal termination of program execution. 
+    
+ - Whenever an exception is raised, JVM creates an object of type 
+   of Exception or sub type of Exception and then returns the exception 
+   related message to the console. 
+    
+ - Exception is a predefined class available in java. 
+ - Exception is a sub class of Throwable. 
+ - Throwable is the super-most class for each error and Exception and their 
+   sub types. 
+ - error is a predefined class. 
+ - error has sub classes such as: 
+       - Assertionerror 
+       - ThreadDeath 
+       - VirtualMachineerror 
+       - Linkageerror 
+   *Assertionerror thrown to indicate that an assertion has failed. 
+   * It was introduced in java 1.4 version. 
+  
+  * ThreadDeath is thrown in the victim thread when the (deprecated) Thread.stop() 
+    method is invoked.  
+    -It was introduced in Java 1.0 version. 
+    -An application should catch instances of this class only if it 
+     must clean up after being terminated asynchronously.If 
+     ThreadDeath is caught by a method, it is important that it should 
+     be re-thrown so that the thread actually dies. 
+      
+  *VirtualMachineerror object is thrown to indicate that the Java Virtual Machine 
+   is broken or has run out of resources necessary for it to continue operating. 
+   - It has multiple sub classes: 
+        a. Internalerror:  
+           Its object thrown is to indicate some unexpected internal error that has occurred in the Java Virtual Machine. 
+        b. StackOverflowerror: It is thrown when a stack overflow occurs because of an application recursing too deeply. 
+        c. Unknownerror:Thrown when an unknown but serious exception has occurred in the Java Virtual Machine. 
+        d.OutOfMemoryerror:It is thrown when the JVM cannot allocate an object because it is out of memory, and no more memory could be made available by the garbage collector. 
+            
+    * Linkageerror: Its  a subclass of error. 
+          Its subclasses indicate that a class has some dependency on another class;however, the latter class incompatibly changed after the compilation of the former class. 
+          It has sub classes such as: 
+               a. ClassFormaterror 
+               b. IncompatibleClassChangeerror 
+               c. ClassCirculatoryerror 
+               d. ExceptionInitializererror 
+               e. Verifyerror 
+               f. UnsatisfiedLinkerror 
+               g. NoClassDefounderror 
+         Some of the miscellaneous error as sub class of IncompatibleClassChangeerror are:NoSuchFielderror,NoSuchMethoderror,Instanitationerror, AbstractMethoderror etc. 
+    Note:  
+    NoSuchFielderror is thrown if an application tries to access or modify a specified 
+    field of an object, and that object no longer has that field. 
+    Generally, this error is caught by the compiler; this error can 
+    only occur at run time if the definition of a class has 
+    incompatibly changed. 
+     
+    NoSuchMethoderror: It is thrown if an application tries to call a specified method of a class (either static or instance), and that class no longer has a definition of 
+    		       that method.Normally ,this error is caught by the compiler;this error can only occur at run time if the definition of a class has incompatibly changed. 
+   
+    IllegalAccesserror: It  is thrown if an application attempts to access or modify a field, or to call a method that it does not have access to. 
+     
+     
+  ---Exception class in java: 
+   - Exception is a predefined class available in java.lang package. 
+   - It is the sub class of Throwable. 
+   - Exception and its subclasses indicates conditions that are reasonable for an  
+     application might to catch.
+SHRI
